@@ -1,8 +1,8 @@
 r"""
-Tree representations (:mod:`skbio.tree`)
+Tree representations (:mod:`skbio.experimental.tree`)
 ========================================
 
-.. currentmodule:: skbio.tree
+.. currentmodule:: skbio.experimental.tree
 
 This module provides functionality for working with trees, including
 phylogenetic trees and hierarchies, and prefix trees (i.e., tries).
@@ -51,7 +51,7 @@ Exceptions
 Examples
 --------
 
->>> from skbio import TreeNode
+>>> from skbio.experimental import TreeNode
 >>> from io import StringIO
 
 A new tree can be constructed from a Newick string. Newick is a common format
@@ -178,7 +178,7 @@ Prefix trees (i.e., tries) examples
 
 Construct a Trie from a (key, value) list
 
->>> from skbio.tree import CompressedTrie
+>>> from skbio.experimental.tree import CompressedTrie
 >>> pair_list = [("ab",  "0"),
 ...              ("abababa", "1"),
 ...              ("abab", "2"),
@@ -220,7 +220,7 @@ Add a new (key, value) pair to the Trie
 
 Create a new trie with a list of sequences
 
->>> from skbio.tree import fasta_to_pairlist
+>>> from skbio.experimental.tree import fasta_to_pairlist
 
 >>> seqs = [("s0", "ACA"),
 ...         ("s1", "ACAGTC"),

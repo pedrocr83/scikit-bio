@@ -16,7 +16,7 @@ Format Support
 +------+------+---------------------------------------------------------------+
 |Reader|Writer|                          Object Class                         |
 +======+======+===============================================================+
-|Yes   |Yes   |:mod:`skbio.tree.TreeNode`                                     |
+|Yes   |Yes   |:mod:`skbio.experimental.tree.TreeNode`                                     |
 +------+------+---------------------------------------------------------------+
 
 Format Specification
@@ -42,7 +42,7 @@ Formal Grammar
           NUMBER ==> a decimal or integer
 
 .. note:: The ``_`` character inside of SAFE_CHARS will be converted to a
-   blank space in ``skbio.tree.TreeNode`` and vice versa.
+   blank space in ``skbio.experimental.tree.TreeNode`` and vice versa.
 
    ``'`` is considered the escape character. To escape ``'`` use a
    preceding ``'``.
@@ -157,7 +157,7 @@ sibling order in its object representations.
 
 Newick has no representation of an unrooted tree. Some biological packages make
 the assumption that when a trifurcated root exists in an otherwise bifurcated
-tree that the tree must be unrooted. In scikit-bio, ``skbio.tree.TreeNode``
+tree that the tree must be unrooted. In scikit-bio, ``skbio.experimental.tree.TreeNode``
 will always be rooted at the ``newick`` root (``;``).
 
 Format Parameters
@@ -175,7 +175,7 @@ This is a simple Newick string.
 
 >>> from StringIO import StringIO
 >>> from skbio import read
->>> from skbio.tree import TreeNode
+>>> from skbio.experimental.tree import TreeNode
 >>> f = StringIO(u"((D, E)B, (F, G)C)A;")
 >>> tree = read(f, format="newick", into=TreeNode)
 >>> f.close()
@@ -226,7 +226,7 @@ from future.builtins import zip, range
 
 from skbio.io import (register_reader, register_writer, register_sniffer,
                       NewickFormatError)
-from skbio.tree import TreeNode
+from skbio.experimental.tree import TreeNode
 
 
 @register_sniffer("newick")

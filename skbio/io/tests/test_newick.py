@@ -11,7 +11,7 @@ from six import StringIO
 
 import unittest
 
-from skbio import TreeNode
+from skbio.experimental import TreeNode
 from skbio.io import NewickFormatError
 from skbio.io.newick import (_newick_to_tree_node, _tree_node_to_newick,
                              _newick_sniffer)

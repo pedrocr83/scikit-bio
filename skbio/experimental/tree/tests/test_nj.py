@@ -11,8 +11,9 @@ from __future__ import absolute_import, division, print_function
 from six import StringIO
 from unittest import TestCase, main
 
-from skbio import DistanceMatrix, TreeNode, nj
-from skbio.tree._nj import (
+from skbio import DistanceMatrix
+from skbio.experimental import TreeNode, nj
+from skbio.experimental.tree._nj import (
     _compute_q, _compute_collapsed_dm, _lowest_index, _otu_to_new_node,
     _pair_members_to_new_node)
 

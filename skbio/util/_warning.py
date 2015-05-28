@@ -20,3 +20,8 @@ class EfficiencyWarning(Warning):
 
     """
     pass
+
+class UnstableAPIWarning(Warning):
+    """Warn about use of code with an unstable API.
+    """
+    pass

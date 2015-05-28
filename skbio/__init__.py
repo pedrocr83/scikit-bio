@@ -17,13 +17,12 @@ from skbio.sequence import Sequence, DNA, RNA, Protein
 from skbio.stats.distance import DistanceMatrix
 from skbio.alignment import (
     local_pairwise_align_ssw, SequenceCollection, Alignment)
-from skbio.tree import TreeNode, nj
 from skbio.io import read, write
 
 
 __all__ = ['Sequence', 'DNA', 'RNA', 'Protein', 'DistanceMatrix',
            'local_pairwise_align_ssw', 'SequenceCollection',
-           'Alignment', 'TreeNode', 'nj', 'read', 'write']
+           'Alignment', 'read', 'write']
 
 __credits__ = "https://github.com/biocore/scikit-bio/graphs/contributors"
 __version__ = "0.2.3-dev"

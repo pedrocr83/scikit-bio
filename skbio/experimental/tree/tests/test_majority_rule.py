@@ -13,9 +13,9 @@ from unittest import TestCase, main
 from six import StringIO
 import numpy as np
 
-from skbio import TreeNode
-from skbio.tree import majority_rule
-from skbio.tree._majority_rule import (_walk_clades, _filter_clades,
+from skbio.experimental import TreeNode
+from skbio.experimental.tree import majority_rule
+from skbio.experimental.tree._majority_rule import (_walk_clades, _filter_clades,
                                        _build_trees)
 
 

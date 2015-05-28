@@ -13,7 +13,7 @@ from future.builtins import zip
 
 import numpy as np
 
-from skbio.tree import TreeNode
+from skbio.experimental.tree import TreeNode
 
 
 def _walk_clades(trees, weights):
@@ -226,7 +226,7 @@ def majority_rule(trees, weights=None, cutoff=0.5, support_attr='support'):
     with the exception that we are computing majority rule and not majority
     rule extended.
 
-    >>> from skbio.tree import TreeNode
+    >>> from skbio.experimental.tree import TreeNode
     >>> from io import StringIO
     >>> trees = [
     ... TreeNode.read(StringIO(u"(A,(B,(H,(D,(J,(((G,E),(F,I)),C))))));")),

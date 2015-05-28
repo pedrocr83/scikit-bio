@@ -12,7 +12,7 @@ import numpy as np
 from six import StringIO
 
 from skbio.stats.distance import DistanceMatrix
-from skbio.tree import TreeNode
+from skbio.experimental.tree import TreeNode
 
 
 def nj(dm, disallow_negative_branch_length=True, result_constructor=None):
@@ -68,7 +68,7 @@ def nj(dm, disallow_negative_branch_length=True, result_constructor=None):
     OTUs: a, b, c, d, and e.
 
     >>> from skbio import DistanceMatrix
-    >>> from skbio.tree import nj
+    >>> from skbio.experimental.tree import nj
 
     >>> data = [[0,  5,  9,  9,  8],
     ...         [5,  0, 10, 10,  9],
