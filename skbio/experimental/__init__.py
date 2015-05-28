@@ -12,6 +12,10 @@ import warnings
 from skbio.util import UnstableAPIWarning
 from skbio.experimental.tree import TreeNode, nj
 
+## TODO: This currently gets executed on ``import skbio``. We'd need to fix that,
+## and ideally add more detail to this message to mention what was imported.
+## Finally, we probably want to warn about the import of every specific
+## unstable API that was imported (this warning will print one time only as-is).
 warnings.warn("You are importing code that has an unstable API. See our "
               "[API guide](https://github.com/biocore/scikit-bio/wiki) "
               "to learn what this means for you.", UnstableAPIWarning)
