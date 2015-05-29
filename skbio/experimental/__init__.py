@@ -1,3 +1,22 @@
+r"""
+Experimental APIs (:mod:`skbio.experimental`)
+=============================================
+
+.. currentmodule:: skbio.experimental
+
+This module provides experimental functionality.
+
+Classes
+-------
+
+.. autosummary::
+   :toctree: generated/
+
+   TreeNode
+   nj
+
+"""
+
 # ----------------------------------------------------------------------------
 # Copyright (c) 2013--, scikit-bio development team.
 #

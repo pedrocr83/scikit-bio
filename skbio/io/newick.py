@@ -16,7 +16,7 @@ Format Support
 +------+------+---------------------------------------------------------------+
 |Reader|Writer|                          Object Class                         |
 +======+======+===============================================================+
-|Yes   |Yes   |:mod:`skbio.experimental.tree.TreeNode`                                     |
+|Yes   |Yes   |:mod:`skbio.experimental.tree.TreeNode`                        |
 +------+------+---------------------------------------------------------------+
 
 Format Specification

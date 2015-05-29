@@ -13,13 +13,20 @@ API Reference
 
    alignment
    sequence
-   tree
    workflow
    draw
    diversity
    stats
    io
    util
+
+Experimental API
+----------------
+
+.. toctree::
+   :maxdepth: 3
+
+   experimental
 
 Developer Documentation
 -----------------------
